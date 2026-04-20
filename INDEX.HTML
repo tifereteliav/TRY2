@@ -54,13 +54,6 @@
             animation-duration: 14s;
             animation-delay: -4s;
         }
-        .sphere-3 {
-            width: 40vw; height: 40vw;
-            background: var(--astra-gold);
-            top: 30%; left: 20%;
-            opacity: 0.05;
-            animation-duration: 22s;
-        }
 
         @keyframes pulse-glow {
             0% { transform: translate(0, 0) scale(1); opacity: 0.1; }
@@ -133,7 +126,7 @@
             -webkit-text-fill-color: transparent;
         }
 
-        /* Social Icons Fixed */
+        /* Social Icons Fixed Styles */
         .social-btn {
             width: 54px;
             height: 54px;
@@ -145,6 +138,7 @@
             justify-content: center;
             transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             color: #94a3b8;
+            cursor: pointer;
         }
         .social-btn:hover {
             background: rgba(255, 255, 255, 0.1);
@@ -161,22 +155,21 @@
 </head>
 <body>
 
-    <!-- Ambient Dynamic Background -->
+    <!-- Ambient Background Layer -->
     <div class="glow-bg">
         <div class="glow-sphere sphere-1"></div>
         <div class="glow-sphere sphere-2"></div>
-        <div class="glow-sphere sphere-3"></div>
     </div>
 
     <!-- Navigation -->
     <nav class="fixed top-0 w-full z-50 nav-glass py-4 px-6">
         <div class="max-w-6xl mx-auto flex items-center justify-between">
-            <div class="flex items-center gap-8">
-                <div class="hidden md:flex items-center gap-6 text-[10px] font-bold tracking-[0.25em] text-slate-500 uppercase">
-                    <a href="https://www.openevidence.com/" target="_blank" class="hover:text-white transition-colors">Open Evidence</a>
-                    <a href="https://gemini.google.com/" target="_blank" class="hover:text-white transition-colors">Gemini</a>
-                    <a href="https://notebooklm.google.com/" target="_blank" class="hover:text-white transition-colors">Notebook LM</a>
-                    <a href="https://labs.google/flow" target="_blank" class="hover:text-white transition-colors">Flow</a>
+            <div class="flex items-center gap-8 text-[10px] font-bold tracking-[0.25em] text-slate-500">
+                <div class="hidden md:flex items-center gap-6">
+                    <a href="https://www.openevidence.com/" target="_blank" class="hover:text-white transition-colors uppercase">Open Evidence</a>
+                    <a href="https://gemini.google.com/" target="_blank" class="hover:text-white transition-colors uppercase">Gemini</a>
+                    <a href="https://notebooklm.google.com/" target="_blank" class="hover:text-white transition-colors uppercase">Notebook LM</a>
+                    <a href="https://labs.google/flow" target="_blank" class="hover:text-white transition-colors uppercase">Flow</a>
                 </div>
             </div>
             
@@ -204,7 +197,7 @@
     <section class="min-h-[65vh] flex flex-col justify-center items-center px-6 relative z-10 text-center">
         <div class="reveal active">
             <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-slate-400 text-[9px] font-bold tracking-[0.4em] uppercase mb-8">
-                Nursing Innovation • Internal Medicine Ichilov
+                Clinical Intelligence • Ichilov Hospital
             </div>
             <h1 class="text-6xl md:text-8xl font-black mb-4 text-white tracking-tighter leading-none" style="text-shadow: 0 0 30px rgba(255,255,255,0.1);">אחיות פנימית 2.0</h1>
             <p class="text-xl md:text-2xl font-light text-slate-400 max-w-3xl mx-auto leading-relaxed mb-10">
@@ -329,7 +322,7 @@
     </section>
 
     <!-- Outcomes Section -->
-    <section id="outcomes" class="py-24 px-6 relative z-10 bg-slate-950/30">
+    <section id="outcomes" class="py-20 px-6 relative z-10 bg-slate-950/20">
         <div class="max-w-6xl mx-auto">
             <h2 class="text-4xl font-black mb-16 text-center gold-gradient-text">התוצרים שהמחלקה מקבלת</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
@@ -422,7 +415,7 @@
 
             <!-- Footer Small Print -->
             <div class="border-t border-white/5 w-full pt-10 text-center relative z-10">
-                <p class="mb-2 text-slate-500 font-medium text-xs">נבנה עבור אירוע חדשנות ולמידה אחיות פנימית איכילוב</p>
+                <p class="mb-2 text-slate-500 font-medium text-xs text-right md:text-center">נבנה עבור אירוע חדשנות ולמידה אחיות פנימית איכילוב</p>
                 <p class="text-[9px] text-slate-700 tracking-[0.5em] font-black uppercase">TIFERET ELIAV &copy; 2026</p>
             </div>
         </div>
