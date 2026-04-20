@@ -54,6 +54,13 @@
             animation-duration: 14s;
             animation-delay: -4s;
         }
+        .sphere-3 {
+            width: 40vw; height: 40vw;
+            background: var(--astra-gold);
+            top: 30%; left: 20%;
+            opacity: 0.05;
+            animation-duration: 22s;
+        }
 
         @keyframes pulse-glow {
             0% { transform: translate(0, 0) scale(1); opacity: 0.1; }
@@ -126,7 +133,7 @@
             -webkit-text-fill-color: transparent;
         }
 
-        /* Social Icons Fixed Styles */
+        /* Social Icons Fixed */
         .social-btn {
             width: 54px;
             height: 54px;
@@ -138,7 +145,6 @@
             justify-content: center;
             transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             color: #94a3b8;
-            cursor: pointer;
         }
         .social-btn:hover {
             background: rgba(255, 255, 255, 0.1);
@@ -155,21 +161,22 @@
 </head>
 <body>
 
-    <!-- Ambient Background Layer -->
+    <!-- Ambient Dynamic Background -->
     <div class="glow-bg">
         <div class="glow-sphere sphere-1"></div>
         <div class="glow-sphere sphere-2"></div>
+        <div class="glow-sphere sphere-3"></div>
     </div>
 
     <!-- Navigation -->
     <nav class="fixed top-0 w-full z-50 nav-glass py-4 px-6">
         <div class="max-w-6xl mx-auto flex items-center justify-between">
-            <div class="flex items-center gap-8 text-[10px] font-bold tracking-[0.25em] text-slate-500">
-                <div class="hidden md:flex items-center gap-6">
-                    <a href="https://www.openevidence.com/" target="_blank" class="hover:text-white transition-colors uppercase">Open Evidence</a>
-                    <a href="https://gemini.google.com/" target="_blank" class="hover:text-white transition-colors uppercase">Gemini</a>
-                    <a href="https://notebooklm.google.com/" target="_blank" class="hover:text-white transition-colors uppercase">Notebook LM</a>
-                    <a href="https://labs.google/flow" target="_blank" class="hover:text-white transition-colors uppercase">Flow</a>
+            <div class="flex items-center gap-8">
+                <div class="hidden md:flex items-center gap-6 text-[10px] font-bold tracking-[0.25em] text-slate-500 uppercase">
+                    <a href="https://www.openevidence.com/" target="_blank" class="hover:text-white transition-colors">Open Evidence</a>
+                    <a href="https://gemini.google.com/" target="_blank" class="hover:text-white transition-colors">Gemini</a>
+                    <a href="https://notebooklm.google.com/" target="_blank" class="hover:text-white transition-colors">Notebook LM</a>
+                    <a href="https://labs.google/flow" target="_blank" class="hover:text-white transition-colors">Flow</a>
                 </div>
             </div>
             
@@ -185,7 +192,7 @@
                         <a href="https://labs.google/flow" target="_blank" class="block px-5 py-3 text-sm hover:bg-white/5 transition-colors">Flow</a>
                     </div>
                 </div>
-                <a href="https://chat.whatsapp.com/HBrXW35P06R6ozyRp3VyFa" target="_blank" class="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-full text-[11px] font-black shadow-lg transition-all flex items-center gap-2">
+                <a href="https://chat.whatsapp.com/HBrXW35P06R6ozyRp3VyFa" target="_blank" class="bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded-full text-[11px] font-black shadow-lg transition-all flex items-center gap-2">
                     <i data-lucide="message-circle" class="w-4 h-4"></i>
                     WHATSAPP
                 </a>
@@ -197,7 +204,7 @@
     <section class="min-h-[65vh] flex flex-col justify-center items-center px-6 relative z-10 text-center">
         <div class="reveal active">
             <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-slate-400 text-[9px] font-bold tracking-[0.4em] uppercase mb-8">
-                Clinical Intelligence • Ichilov Hospital
+                Nursing Innovation • Internal Medicine Ichilov
             </div>
             <h1 class="text-6xl md:text-8xl font-black mb-4 text-white tracking-tighter leading-none" style="text-shadow: 0 0 30px rgba(255,255,255,0.1);">אחיות פנימית 2.0</h1>
             <p class="text-xl md:text-2xl font-light text-slate-400 max-w-3xl mx-auto leading-relaxed mb-10">
@@ -220,7 +227,7 @@
 
         <div class="space-y-8 pr-12">
             <!-- Step 1 -->
-            <div class="reveal timeline-line group text-right">
+            <div class="reveal timeline-line group">
                 <div class="absolute right-[-2.45rem] top-2 w-3.5 h-3.5 rounded-full bg-black border-2 border-astra-purple z-10 shadow-[0_0_15px_var(--astra-purple)]"></div>
                 <div class="glass-card p-6 rounded-3xl">
                     <div class="flex justify-between items-center mb-3">
@@ -233,7 +240,7 @@
             </div>
 
             <!-- Step 2 -->
-            <div class="reveal timeline-line group text-right">
+            <div class="reveal timeline-line group">
                 <div class="absolute right-[-2.45rem] top-2 w-3.5 h-3.5 rounded-full bg-black border-2 border-slate-700 z-10"></div>
                 <div class="glass-card p-6 rounded-3xl">
                     <div class="flex justify-between items-center mb-3">
@@ -246,7 +253,7 @@
             </div>
 
             <!-- Step 3 -->
-            <div class="reveal timeline-line group text-right">
+            <div class="reveal timeline-line group">
                 <div class="absolute right-[-2.45rem] top-2 w-3.5 h-3.5 rounded-full bg-black border-2 border-astra-purple z-10"></div>
                 <div class="glass-card p-6 rounded-3xl">
                     <div class="flex justify-between items-center mb-3">
@@ -259,7 +266,7 @@
             </div>
 
             <!-- Step 4 -->
-            <div class="reveal timeline-line group text-right">
+            <div class="reveal timeline-line group">
                 <div class="absolute right-[-2.45rem] top-2 w-3.5 h-3.5 rounded-full bg-black border-2 border-slate-700 z-10"></div>
                 <div class="glass-card p-6 rounded-3xl">
                     <div class="flex justify-between items-center mb-3">
@@ -280,7 +287,7 @@
             </div>
 
             <!-- Step 5 -->
-            <div class="reveal timeline-line group text-right">
+            <div class="reveal timeline-line group">
                 <div class="absolute right-[-2.45rem] top-2 w-3.5 h-3.5 rounded-full bg-black border-2 border-astra-purple z-10"></div>
                 <div class="glass-card p-6 rounded-3xl">
                     <div class="flex justify-between items-center mb-3">
@@ -293,12 +300,12 @@
             </div>
 
             <!-- Step 6 -->
-            <div class="reveal timeline-line group text-right">
+            <div class="reveal timeline-line group">
                 <div class="absolute right-[-2.45rem] top-2 w-3.5 h-3.5 rounded-full bg-black border-2 border-slate-700 z-10"></div>
                 <div class="glass-card p-6 rounded-3xl">
                     <div class="flex justify-between items-center mb-3">
                         <span class="text-slate-500 font-black tracking-widest text-[9px] uppercase">SESSION 06</span>
-                        <span class="text-white/30 text-[10px] font-bold">30 דקות</span>
+                        <span class="text-blue-400">30 דקות</span>
                     </div>
                     <h4 class="text-xl font-bold mb-1">Flow: יצירת סרטוני הדרכה</h4>
                     <p class="text-slate-400 text-sm italic">המחשה ויזואלית מהירה של פרוטוקולים ונהלים.</p>
@@ -322,7 +329,7 @@
     </section>
 
     <!-- Outcomes Section -->
-    <section id="outcomes" class="py-20 px-6 relative z-10 bg-slate-950/20">
+    <section id="outcomes" class="py-24 px-6 relative z-10 bg-slate-950/30">
         <div class="max-w-6xl mx-auto">
             <h2 class="text-4xl font-black mb-16 text-center gold-gradient-text">התוצרים שהמחלקה מקבלת</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
@@ -374,7 +381,9 @@
                 
                 <div class="relative w-36 h-36 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-astra-gold/40 shadow-2xl mb-10 group">
                     <div class="absolute inset-0 bg-astra-purple/30 blur-2xl rounded-full -z-10"></div>
-                    <div class="absolute inset-0 bg-slate-900 flex items-center justify-center -z-20"><i data-lucide="user" class="w-16 h-16 text-slate-700"></i></div>
+                    <div class="absolute inset-0 bg-slate-900 flex items-center justify-center -z-20">
+                        <i data-lucide="user" class="w-16 h-16 text-slate-700"></i>
+                    </div>
                     <img src="tiferet.jpeg" alt="תפארת אליאב" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" onerror="this.style.opacity='0'">
                 </div>
 
